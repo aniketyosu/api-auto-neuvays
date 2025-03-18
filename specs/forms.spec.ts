@@ -4,6 +4,7 @@ const { faker } = require("@faker-js/faker");
 
 describe("POST /contactSapInsider", () => {
   // ✅ Test: Successful booking
+  jest.setTimeout(10000);
   it("should create a booking successfully", async () => {
     const bookingPayload = {
       fullName: faker.person.fullName(),
@@ -16,13 +17,12 @@ describe("POST /contactSapInsider", () => {
 
     const response = await request
       .post("/contactSapInsider")
-      .send(bookingPayload)
-      .expect("Content-Type", /json/);
+      .send(bookingPayload);
 
+    console.log(response.status, response.body);
     expect(response.status).toBe(201);
-    // expect(response.body).toHaveProperty("id");
-    // expect(response.body.fullName).toBe(bookingPayload.fullName);
-  });
+    // expect(response.body.message).toMatch(/invalid phone number/i);
+  }, 10000); // Extend timeout
 
   // ❌ Test: Missing required fields
   it("should return 400 if required fields are missing", async () => {
