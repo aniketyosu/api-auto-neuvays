@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Jest Tests" tests="14" failures="7" errors="0" time="34.957">
+  <testsuite name="specs\forms.spec.ts" errors="0" failures="7" skipped="0" timestamp="2025-03-19T13:54:44" time="34.515" tests="14">
+    <testcase classname="POST /contactSapInsider-should create a booking successfully" name="should create a booking successfully" time="6.232">
+    </testcase>
+    <testcase classname="POST /contactSapInsider-should return 400 if required fields are missing" name="should return 400 if required fields are missing" time="2.557">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 500
+    at C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:28:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="POST /contactSapInsider-should return 400 if email format is invalid" name="should return 400 if email format is invalid" time="0.598">
+    </testcase>
+    <testcase classname="POST /contactSapInsider-should return 400 if phone number is not 10 digits" name="should return 400 if phone number is not 10 digits" time="4.874">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 201
+    at C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:62:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="POST /contactSapInsider-should return 400 if date format is incorrect" name="should return 400 if date format is incorrect" time="0.608">
+    </testcase>
+    <testcase classname="POST /contactSapInsider-should return 400 if date is in the past" name="should return 400 if date is in the past" time="0.569">
+    </testcase>
+    <testcase classname="POST /contactSapInsider-should return 400 if time format is incorrect" name="should return 400 if time format is incorrect" time="0.664">
+    </testcase>
+    <testcase classname="POST /contactSapInsider-should return 400 if fullName contains invalid characters" name="should return 400 if fullName contains invalid characters" time="0.636">
+    </testcase>
+    <testcase classname="POST /contactSapInsider-should return 400 if unexpected fields are included" name="should return 400 if unexpected fields are included" time="0.799">
+    </testcase>
+    <testcase classname="POST /addInterest-should add interest successfully" name="should add interest successfully" time="0.824">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 201
+Received: 500
+    at C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:170:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="POST /addInterest-should return 400 for missing required fields" name="should return 400 for missing required fields" time="2.453">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 500
+    at C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:182:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="POST /addInterest-should return 400 for invalid email format" name="should return 400 for invalid email format" time="0.719">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 500
+    at C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:198:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="POST /addInterest-should return 400 for invalid phone number" name="should return 400 for invalid phone number" time="4.074">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 201
+    at C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:214:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="POST /addInterest-should return 400 for invalid trial type" name="should return 400 for invalid trial type" time="4">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 201
+    at C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:230:29
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\Users\Aniket\api-auto-neuvays\specs\forms.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
